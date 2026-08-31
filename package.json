@@ -1,0 +1,58 @@
+{
+  "name": "msw-terrarium",
+  "version": "0.1.0",
+  "description": "Bucket-scoped, isolated stateful mock server for parallel Playwright tests. Built on MSW and @msw/data.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./playwright": "./src/playwright.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "mock",
+    "mock-server",
+    "stateful",
+    "playwright",
+    "msw",
+    "e2e",
+    "testing",
+    "parallel",
+    "bucket",
+    "isolation",
+    "terrarium"
+  ],
+  "author": "Steve Zhang",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@msw/data": "^1.1.7",
+    "@mswjs/http-middleware": "^0.10.3",
+    "express": "^4.22.2",
+    "msw": "^2.14.5"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "peerDependenciesMeta": {
+    "@playwright/test": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.11",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.11",
+    "zod": "^4.4.3"
+  }
+}
