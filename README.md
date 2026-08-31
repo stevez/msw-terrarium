@@ -2,7 +2,7 @@
 
 Bucket-scoped, isolated stateful mock server for parallel Playwright tests. Built on [MSW](https://mswjs.io) and [@msw/data](https://github.com/mswjs/data).
 
-> **Status:** pre-alpha. APIs may change before v1.0.
+> **Status:** alpha (v0.1.0). APIs may change before v1.0.
 
 ## What this solves
 
@@ -32,11 +32,8 @@ Isolation between parallel workers is done via an `x-mock-bucket: w0` HTTP heade
 
 ## Install
 
-Not published to npm yet — pre-alpha. Consume via `npm link` or a GitHub tarball for now:
-
 ```bash
-# From your consumer project:
-npm install github:stevez/msw-terrarium
+npm install msw-terrarium
 ```
 
 Peer dependencies (install if you use the corresponding features):
