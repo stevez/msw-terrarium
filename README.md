@@ -2,8 +2,6 @@
 
 Bucket-scoped, isolated stateful mock server for parallel Playwright tests. Built on [MSW](https://mswjs.io) and [@msw/data](https://github.com/mswjs/data).
 
-> **Status:** alpha (v0.1.0). APIs may change before v1.0.
-
 ## What this solves
 
 Playwright tests running in parallel typically use MSW handlers that return **canned responses**. That's fine for simple assertions ("the UI shows this JSON"), but breaks the moment tests exercise **round-trip behavior**:
